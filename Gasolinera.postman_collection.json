@@ -1,0 +1,877 @@
+{
+	"info": {
+		"_postman_id": "e7109464-0d0f-4fda-9a34-8025a01c82e6",
+		"name": "Gasolinera",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "41671443"
+	},
+	"item": [
+		{
+			"name": "Producto",
+			"item": [
+				{
+					"name": "Crear producto",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nombre\": \"Diésel Premium\",\r\n    \"descripcion\": \"Combustible diésel de alta calidad con aditivos\",\r\n    \"tipo\": \"Diésel\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://gasolinera1-ultimo.onrender.com/producto/crear",
+							"protocol": "https",
+							"host": [
+								"gasolinera1-ultimo",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"producto",
+								"crear"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Lista de productos",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://gasolinera1-ultimo.onrender.com/producto/lista",
+							"protocol": "https",
+							"host": [
+								"gasolinera1-ultimo",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"producto",
+								"lista"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Buscar 1 producto",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://gasolinera1-ultimo.onrender.com/producto/buscar/1",
+							"protocol": "https",
+							"host": [
+								"gasolinera1-ultimo",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"producto",
+								"buscar",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Borrar 1 producto",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "https://gasolinera1-ultimo.onrender.com/producto/borrar/3",
+							"protocol": "https",
+							"host": [
+								"gasolinera1-ultimo",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"producto",
+								"borrar",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Modificar",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\":52,\r\n    \"nombre\": \"Diésel\",\r\n    \"descripcion\": \"Combustible diésel\",\r\n    \"tipo\": \"Diésel\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://gasolinera1-ultimo.onrender.com/producto/editar",
+							"protocol": "https",
+							"host": [
+								"gasolinera1-ultimo",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"producto",
+								"editar"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Surtidor",
+			"item": [
+				{
+					"name": "Crear Surtidor",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"codigo\": \"S002\",\r\n    \"fechaInstalacion\": \"2023-01-23\",\r\n    \"activo\": true\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://gasolinera1-ultimo.onrender.com/surtidor/crear",
+							"protocol": "https",
+							"host": [
+								"gasolinera1-ultimo",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"surtidor",
+								"crear"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Modificar",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": 3,\r\n    \"codigo\": \"S003\",\r\n    \"fechaInstalacion\": \"2023-01-25\",\r\n    \"activo\": true\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://gasolinera1-ultimo.onrender.com/surtidor/editar",
+							"protocol": "https",
+							"host": [
+								"gasolinera1-ultimo",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"surtidor",
+								"editar"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Eliminar",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "https://gasolinera1-ultimo.onrender.com/surtidor/borrar/3",
+							"protocol": "https",
+							"host": [
+								"gasolinera1-ultimo",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"surtidor",
+								"borrar",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Lista",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://gasolinera1-ultimo.onrender.com/surtidor/lista",
+							"protocol": "https",
+							"host": [
+								"gasolinera1-ultimo",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"surtidor",
+								"lista"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Buscar 1",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://gasolinera1-ultimo.onrender.com/surtidor/buscar/1",
+							"protocol": "https",
+							"host": [
+								"gasolinera1-ultimo",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"surtidor",
+								"buscar",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Precio",
+			"item": [
+				{
+					"name": "Crear",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"fechaInicio\": \"2023-02-01\",\r\n    \"fechaFin\": \"2023-02-15\",\r\n    \"precioPorLitro\": 1.49,\r\n    \"producto\": {\r\n        \"id\": 52\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://gasolinera1-ultimo.onrender.com/precio/crear",
+							"protocol": "https",
+							"host": [
+								"gasolinera1-ultimo",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"precio",
+								"crear"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Editar",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": 1,\r\n    \"fechaInicio\": \"2023-01-15\",\r\n    \"fechaFin\": \"2023-01-24\",\r\n    \"precioPorLitro\": 1.01\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://gasolinera1-ultimo.onrender.com/precio/editar",
+							"protocol": "https",
+							"host": [
+								"gasolinera1-ultimo",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"precio",
+								"editar"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Lista",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://gasolinera1-ultimo.onrender.com/precio/lista",
+							"protocol": "https",
+							"host": [
+								"gasolinera1-ultimo",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"precio",
+								"lista"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Buscar 1",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://gasolinera1-ultimo.onrender.com/precio/buscar/52",
+							"protocol": "https",
+							"host": [
+								"gasolinera1-ultimo",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"precio",
+								"buscar",
+								"52"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Borrar",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "https://gasolinera1-ultimo.onrender.com/precio/borrar/53",
+							"protocol": "https",
+							"host": [
+								"gasolinera1-ultimo",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"precio",
+								"borrar",
+								"53"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Tanque",
+			"item": [
+				{
+					"name": "Crear",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"codigo\": \"t001\",\r\n    \"capacidadMaxima\": 100,\r\n    \"cantidad\": 50,\r\n    \"producto\":{\r\n        \"id\": 52\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://gasolinera1-ultimo.onrender.com/tanque/crear",
+							"protocol": "https",
+							"host": [
+								"gasolinera1-ultimo",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"tanque",
+								"crear"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Editar",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": 3,\r\n    \"codigo\": \"t001\",\r\n    \"capacidadMaxima\": 100,\r\n    \"cantidad\": 20,\r\n    \"producto\":{\r\n        \"id\": 52\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://gasolinera1-ultimo.onrender.com/tanque/editar",
+							"protocol": "https",
+							"host": [
+								"gasolinera1-ultimo",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"tanque",
+								"editar"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Lista",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://gasolinera1-ultimo.onrender.com/tanque/lista",
+							"protocol": "https",
+							"host": [
+								"gasolinera1-ultimo",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"tanque",
+								"lista"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Buscar",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://gasolinera1-ultimo.onrender.com/tanque/buscar/3",
+							"protocol": "https",
+							"host": [
+								"gasolinera1-ultimo",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"tanque",
+								"buscar",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Borrar",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "https://gasolinera1-ultimo.onrender.com/tanque/borrar/4",
+							"protocol": "https",
+							"host": [
+								"gasolinera1-ultimo",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"tanque",
+								"borrar",
+								"4"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Suminsitro",
+			"item": [
+				{
+					"name": "Crear",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"fechaHora\": \"2023-02-01\",\r\n    \"volumenLitros\": 20.5,\r\n    \"importeLitros\": 50,\r\n    \"producto\":{\r\n        \"id\":52\r\n    },\r\n    \"surtidor\":{\r\n        \"id\": 2\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://gasolinera1-ultimo.onrender.com/suministro/crear",
+							"protocol": "https",
+							"host": [
+								"gasolinera1-ultimo",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"suministro",
+								"crear"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Editar",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": 1,\r\n    \"fechaHora\": \"2023-02-25\",\r\n    \"volumenLitros\": 20.5,\r\n    \"importeLitros\": 50,\r\n    \"producto\":{\r\n        \"id\":52\r\n    },\r\n    \"surtidor\":{\r\n        \"id\": 2\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://gasolinera1-ultimo.onrender.com/suministro/editar",
+							"protocol": "https",
+							"host": [
+								"gasolinera1-ultimo",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"suministro",
+								"editar"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Lista",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://gasolinera1-ultimo.onrender.com/suministro/lista",
+							"protocol": "https",
+							"host": [
+								"gasolinera1-ultimo",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"suministro",
+								"lista"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Buscar 1",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://gasolinera1-ultimo.onrender.com/suministro/buscar/1",
+							"protocol": "https",
+							"host": [
+								"gasolinera1-ultimo",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"suministro",
+								"buscar",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Borrar",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "https://gasolinera1-ultimo.onrender.com/suministro/borrar/1",
+							"protocol": "https",
+							"host": [
+								"gasolinera1-ultimo",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"suministro",
+								"borrar",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "SurtidorProducto",
+			"item": [
+				{
+					"name": "Crear",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"surtidor\":{\r\n        \"id\": 2\r\n    },\r\n    \"producto\":{\r\n        \"id\": 52\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://gasolinera1-ultimo.onrender.com/surtprod/crear",
+							"protocol": "https",
+							"host": [
+								"gasolinera1-ultimo",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"surtprod",
+								"crear"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Editar",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": 1,\r\n    \"surtidor\":{\r\n        \"id\": 1\r\n    },\r\n    \"producto\":{\r\n        \"id\": 52\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://gasolinera1-ultimo.onrender.com/surtprod/editar",
+							"protocol": "https",
+							"host": [
+								"gasolinera1-ultimo",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"surtprod",
+								"editar"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Eliminar",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "https://gasolinera1-ultimo.onrender.com/surtprod/eliminar/2",
+							"protocol": "https",
+							"host": [
+								"gasolinera1-ultimo",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"surtprod",
+								"eliminar",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Lista",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://gasolinera1-ultimo.onrender.com/surtprod/lista",
+							"protocol": "https",
+							"host": [
+								"gasolinera1-ultimo",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"surtprod",
+								"lista"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Buscar 1",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://gasolinera1-ultimo.onrender.com/surtprod/buscar/1",
+							"protocol": "https",
+							"host": [
+								"gasolinera1-ultimo",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"surtprod",
+								"buscar",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
