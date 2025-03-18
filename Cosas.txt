@@ -1,0 +1,3 @@
+DB_URL="jdbc:mysql://iasanz.synology.me/mruizc96_Gasolinera?useSSL=false&serverTimezone=UTC"
+DB_USER_NAME="alumno"
+DB_PASSWORD="AlumnoSanz$1"
